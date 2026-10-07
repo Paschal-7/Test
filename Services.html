@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Our Services</title>
+        <link rel="stylesheet"; href="style.css">
         <style>
             body {Color:#303030;font-family:sans-serif;}
             h1 {color:Maroon;font-family:verdana;}
@@ -49,5 +50,23 @@
             <input type="button">
             -->
         </form>
+
+        <hr>
+
+        <!--Java Test Starts Here-->
+        <p id="javademo">Changing HTML Contents by Javascript</p>
+        <button Type="button" onclick='document.getElementById("javademo").innerHTML="Hello JavaScript"'>Change</button>
+        <button Type="button" onclick='document.getElementById("javademo").innerHTML="Changing HTML Contents by Javascript"'>Return</button>
+
+        <!--Hidding A content-->
+        <p id="javahide">Hello HTML</p>
+        <button type="button" onclick='document.getElementById("javahide").style.display="none"'> Hide</button>
+        <br><br>
+
+        <!--Unhide a hidden content-->
+        <p id="javaunhide" style="display:none">This is a hidden content to be unhidden</p>
+        <button type="button" onclick='document.getElementById("javaunhide").style.display="block"'>Unhide</button>
+
+
     </body>
 </html>
