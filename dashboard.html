@@ -15,7 +15,7 @@
     <style>
         [class*="col"] {
             padding: 1rem;
-            background-color: aquamarine;
+            background-color: rgb(219, 221, 221);
             border: 4px solid #fefefe;
             color: #363636
         }
@@ -25,7 +25,8 @@
 <body>
     <h1>IT Support Dashboard</h1>
 
-    <button type="button" class="btn btn-primary">Primary</button>
+<div class="container my-5">
+        <button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-secondary">Secondary</button>
 <button type="button" class="btn btn-success">Success</button>
 <button type="button" class="btn btn-danger">Danger</button>
@@ -36,15 +37,75 @@
 
 <button type="button" class="btn btn-link">Link</button>
 
+<button type="button" class="btn btn-outline-primary">Primary</button>
+</div>
+
 <!-- GRID-->
- <div class="container-fluid border">
-    <div class="row">
-        <div class="col-sm-2 col-md-4">col1</div>
-        <div class="col-sm-5 col-md-4">col2</div>
-        <div class="col-sm-5 col-md-4">col3</div>
+ <div class="container-fluid border my-2 mx-2">
+    <div class="row" style="text-align: center;">
+        <div class="col-sm-2 col-md-4 bg-lih">New Laptops <br> 200</div>
+        <div class="col-sm-5 col-md-4">Laptops in Use:<br> 125</div>
+        <div class="col-sm-5 col-md-4">Required Laptops:<br> 100</div>
+    </div>
+    <h2 style="text-align: center;">Sites requiring laptops:</h2>
+    <div class="row gx-1 gy-3" style=" text-align:center">
+        <div class="col-4">Nungwi:<br> 10 </div>
+        <div class="col-4">Airport: <br> 10</div>
+        <div class="col-4">Court House:<br>30</div>
+        <div class="col-4">Old Fort:<br>30</div>
+        <div class="col-4">Malindi:<br>10</div>
+        <div class="col-4">Caravan:<br>10</div>
     </div>
  </div>
 
+ <!--CARDS START HERE - normal -->
+<div class="card" style="width: 18rem;">
+  <img src="img/service1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Our Services</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="services.html" class="btn btn-outline-info">Go somewhere</a>
+  </div>
+</div>
+
+<!--CARD INCLUDED IN A CONTAINER For easy size control-->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <div class="card">
+                <img src="img/service1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Our Services</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <a href="services.html" class="btn btn-outline-info">Read More</a>
+                </div>
+            </div>
+        </div>
+
+         <div class="col-sm-12 col-md-4">
+            <div class="card">
+                <img src="img/service1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Our Services</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <a href="services.html" class="btn btn-outline-info">Read More</a>
+                </div>
+            </div>
+        </div>
+
+         <div class="col-sm-12 col-md-4">
+            <div class="card">
+                <img src="img/service1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Our Services</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <a href="services.html" class="btn btn-outline-info">Read More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 
    <!-- not working js -->
     
